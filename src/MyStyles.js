@@ -349,7 +349,7 @@ const styles = {
 
   createMySecureAccountDiv: {
     position: "absolute",
-    // top: "0px",
+    top: "0px",
     display: "flex",
     flexDirection: "column",
     backgroundColor: "white",
