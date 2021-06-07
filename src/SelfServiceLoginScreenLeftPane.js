@@ -570,28 +570,14 @@ const SelfServiceLoginScreenLeftPane = (props) => {
       {(() => {
         if (loginNowScreenActive) {
           return loginNow(props);
-          // } else if (resetYourPasswordScreenActive) {
-          //   return resetYourPassword(props);
         } else {
           return steps(props);
         }
       })()}
-      {/* {loginNowScreenActive && loginNow(props)} */}
+      {/* {steps(props)}
+      {loginNowScreenActive && loginNow(props)} */}
       {resetYourPasswordScreenActive && resetYourPassword(props)}
       {selfServiceLoginStep4 && step4(props)}
-
-      {/* {(() => {
-        if (loginNowScreenActive) {
-          return loginNow(props);
-        } else if (resetYourPasswordScreenActive) {
-          return resetYourPassword(props);
-        } else if (selfServiceLoginStep4) {
-          return step4(props);
-        } else {
-          return steps(props);
-        }
-      })()} */}
-      {/* {loginNowScreenActive ? loginNow(props) : steps(props)} */}
     </TransitionGroup>
   );
 };
